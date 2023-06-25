@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Mono', monospace;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+}
+.main{
+    margin: 5%;
+    width:60%;
+    font-size: large;
+}
+
+.intro-text{
+    padding-bottom: 5%;
+    font-weight: 500;
+    
+}
+
+.ps-text{
+    padding-bottom: 5%;
+    font-size:small;
+    font-weight: 300;
+}
