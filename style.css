@@ -8,7 +8,7 @@ body{
     background-color: black;
     color: aliceblue;
 }
-.main{
+.main-container{
     margin: 5%;
     width:60%;
     font-size: large;
@@ -20,8 +20,29 @@ body{
     
 }
 
+.intro-text > p{
+    padding-top: 3%;
+}
+
+.ps-container{
+    width:60%;
+}
 .ps-text{
     padding-bottom: 5%;
     font-size:small;
     font-weight: 300;
+}
+
+.footer{
+    font-size:small;
+    font-weight:500
+}
+
+a:link {
+    color: white;
+  }
+
+.footer > span::after{
+    content:'\a';
+    white-space: pre;
 }
