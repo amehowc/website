@@ -6,7 +6,7 @@
 
 body{
     background-color: black;
-    color: aliceblue;
+    color: #ddd;
 }
 .main-container{
     margin: 5%;
@@ -25,7 +25,7 @@ body{
 }
 
 .ps-container{
-    width:60%;
+    width:80%;
 }
 .ps-text{
     padding-bottom: 5%;
@@ -33,11 +33,14 @@ body{
     font-weight: 300;
 }
 
+.work-list{
+    padding-bottom: 5%;
+}
+
 .work-item {
-    background-color: #eee;
-    color: #444;
+    background-color:transparent;
+    color: #fff;
     cursor: pointer;
-    padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
@@ -45,17 +48,32 @@ body{
     font-size: 15px;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .work-item:hover {
-    background-color: #ccc;
+.work-item-infos{
+    font-size: 12px;
+    padding-bottom: 3%;
+}
+
+.work-item-image{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-item-image img{
+    flex: none;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+ .work-item:hover {
+    text-decoration: line-through;
   }
   
-  /* Style the collapsible content. Note: hidden by default */
   .work-item-content {
-    padding: 0 18px;
+    padding-top: 3%;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #000;
   }
 
 .footer{
@@ -71,3 +89,5 @@ a:link {
     content:'\a';
     white-space: pre;
 }
+
+
