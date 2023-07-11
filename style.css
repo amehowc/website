@@ -7,9 +7,12 @@
 body{
     background-color: black;
     color: #ddd;
+    display: flex;
+    justify-content: center;
 }
 .main-container{
     margin: 5%;
+    display: block;
     width:60%;
     font-size: large;
 }
@@ -45,7 +48,7 @@ body{
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 18px;
   }
   
 .work-item-infos{
@@ -60,7 +63,7 @@ body{
 
 .work-item-image img{
     flex: none;
-    width: 80%;
+    width: 50%;
     height: auto;
     object-fit: cover;
 }
@@ -76,7 +79,13 @@ body{
     background-color: #000;
   }
 
+.section-header{
+    padding-top: 5px;
+    border-top: 1px solid white;
+}
+
 .footer{
+
     font-size:small;
     font-weight:500
 }
@@ -91,3 +100,32 @@ a:link {
 }
 
 
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .grid-item {
+    flex-basis: 23%; /* 33.333% to create 3 items per row, minus 10px for spacing */
+    margin-top: 0; /* Remove top margin */
+  }
+  
+  .grid-item > img {
+    width: 50%;
+    height: auto;
+  }
+  
+  /* For responsive layout */
+  @media (max-width: 767px) {
+    .grid-item {
+      flex-basis: calc(33% - 10px); /* 50% to create 2 items per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-item {
+      flex-basis: 50%%; /* 1 item per row on smallest screens */
+    }
+  }
