@@ -12,7 +12,23 @@ body {
   border-top-width: thin;
   border-bottom-width: thin;
 }
+
+.spinner-container{
+position: fixed;
+  top: 0;
+  right: 0;
+  height:200px;
+  background-color: transparent;
+}
+
+#spinner-canvas{
+    background-color: transparent;
+    width:100%;
+    height:100%;
+}
+
 .main-container {
+    position: relative;
   margin: 5%;
   display: block;
   width: 75%;
@@ -217,10 +233,5 @@ padding-bottom: 10vh;
   .section-text {
     display: block;
     font-size: small;
-  }
-
-  canvas{
-    height:320px;
-    width: 33%;
   }
 }
