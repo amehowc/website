@@ -11,99 +11,169 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
     <title>Hi !</title>
   </head>
   <body>
     <div class="main-container">
-      <div class="main">
-        <div class="intro-text">
+      <section class="intro">
+        <div class="section-container">
+          <h1 class="section-title" id="intro-title">hello !</h1>
+          <div class="canvas-container">
+            <canvas
+              class="canvas"
+              id="canvas"
+              style="background-color: blue"
+              width="360"
+              height="640"
+            ></canvas>
+          </div>
+          <div class="section-text">
+            <p>
+              I'm Arthur. I’m a designer and brand strategist by day and I
+              develop web-based design tools when I’m not sleeping, cooking or
+              playing with my cat. I’m always interested in collaborating with
+              cool people with larger than life ideas.
+            </p>
+            <p>
+              My weapons of choice are javaScript, webCanvas and webGL but I’m
+              always curious about learning new stuff and trying new
+              technologies. I’m trying to use this website to showcase what I
+              like to do. For my design portfolio, please reach out using any
+              means you like.
+            </p>
+          </div>
+          <div class="section-subtext">
+            <p>
+              Shoot out to my amazing friends and clients. <br />Feel free to
+              say hi <a href="mailto:arthurcloche@gmail.com">👋</a> !
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="works">
+        <h1 class="section-title">Works</h1>
+        <div class="section-text-noflex">
           <p>
-          Hi, im Arthur. I’m a brand strategist by day and I develop
-          web-based design tools when I’m not sleeping or playing with my cat.
-          I’m always interested in collaborating
-          with cool people with larger than life ideas. </p><p> My weapons of choice are
-          javaScript, webCanvas and webGL but I’m always curious about learning
-          new stuff and trying new technologies. I’m trying to use this website to showcase
-          what I like to do.</p>
-          <p>
-            Shoot out to my amazing friends and clients. <br />Feel free to
-            reach out and say hi  <a href="mailto:arthurcloche@gmail.com">👋</a> !
+            Applications i had the chance to build in collaboration with amazing
+            people. I dont own any rights on the visuals unless specified.
           </p>
         </div>
-        <div class="ps-container">
-          <div class="ps-text">
-            Ps. I’m a self taught dev with no real computer science background.
-            It might happen that my code sucks :).
-          </div>
-        </div>
-      </div>
-      <div class="header-title">
-        <p>Work</p>
-        <div class="intro-text">
-          Those are the works i had to do in collaboration with amazing people.
-        </div>
-      </div>
-      <div class="work-list">
-        <div class="work-item-holder">
-          <button type="button" class="work-item">Work 01</button>
-          <div class="work-item-content">
-            <div class="work-item-infos">
-            <p class="work-item-name">Work Title</p>
-            <p class="work-item-date">2023</p>
-            <p class="work-item-collaborator">Client : <a href="https://www.caserne.com">Caserne</a></p>
-            <p class="work-item-github"><a href="https://github.com">GitHub</a></p>
-          </div>
-            <div class="work-item-image">
-              <img src="./test-img/01.jpg" alt="A painting of a flower">
-              <img src="./test-img/02.jpg" alt="A painting of a flower">
+
+        <div class="work-list">
+          <div class="work-item-holder">
+            <button type="button" class="work-item">
+              Mutek Video Sources
+              <span>2021</span>
+            </button>
+            <div class="work-item-content">
+              <div class="work-item-infos">
+                <p class="work-item-name">Work Title</p>
+                <p class="work-item-date">2023</p>
+                <p class="work-item-collaborator">
+                  Client : <a href="https://www.caserne.com">Studio Baillat</a>
+                </p>
+              </div>
+              <div class="work-item-image">
+                <img src="./test-img/01.jpg" alt="A painting of a flower" />
+                <img src="./test-img/02.jpg" alt="A painting of a flower" />
+              </div>
+            </div>
+            <button type="button" class="work-item">
+              Turfu
+              <span>2021</span>
+            </button>
+            <div class="work-item-content">
+              <div class="work-item-infos">
+                <p class="work-item-name">Work Title</p>
+                <p class="work-item-date">2023</p>
+                <p class="work-item-collaborator">
+                  Client : <a href="https://www.caserne.com">Caserne</a>
+                </p>
+              </div>
+              <div class="work-item-image">
+                <img src="./test-img/01.jpg" alt="A painting of a flower" />
+                <img src="./test-img/02.jpg" alt="A painting of a flower" />
+              </div>
+            </div>
+            <button type="button" class="work-item">
+              Camelia Sinensis
+              <span>2021</span>
+            </button>
+            <div class="work-item-content">
+              <div class="work-item-infos">
+                <p class="work-item-name">Work Title</p>
+                <p class="work-item-date">2023</p>
+                <p class="work-item-collaborator">
+                  Client : <a href="https://www.caserne.com">Caserne</a>
+                </p>
+              </div>
+              <div class="work-item-image">
+                <img src="./test-img/01.jpg" alt="A painting of a flower" />
+                <img src="./test-img/02.jpg" alt="A painting of a flower" />
+              </div>
             </div>
           </div>
-          <button type="button" class="work-item">Work 02</button>
-          <div class="work-item-content">
-            <div class="work-item-infos">
-            <p class="work-item-name">Work Title</p>
-            <p class="work-item-date">2023</p>
-            <p class="work-item-collaborator">Client : <a href="https://www.caserne.com">Caserne</a></p>
-            <p class="work-item-github"><a href="https://github.com">GitHub</a></p>
-          </div>
-            <div class="work-item-image">
-              <img src="./test-img/01.jpg" alt="A painting of a flower">
-              <img src="./test-img/02.jpg" alt="A painting of a flower">
-            </div>
-          </div>
-          <button type="button" class="work-item">Work 03</button>
-          <div class="work-item-content">
-            <div class="work-item-infos">
-            <p class="work-item-name">Work Title</p>
-            <p class="work-item-date">2023</p>
-            <p class="work-item-collaborator">Client : <a href="https://www.caserne.com">Caserne</a></p>
-            <p class="work-item-github"><a href="https://github.com">GitHub</a></p>
-          </div>
-            <div class="work-item-image">
-              <img src="./test-img/01.jpg" alt="A painting of a flower">
-              <img src="./test-img/02.jpg" alt="A painting of a flower">
-            </div>
+        </div>
+      </section>
+      <section class="creative-coding">
+        <h1 class="section-title">Creative Coding</h1>
+        <div class="section-text-noflex">
+          <p id="creative-coding-text">
+            Pieces, bits of code or proofs of concept that didn't ended up being
+            fully-developed app or just built for fun or curiosity.
+          </p>
+        </div>
+        <div class="grid-section">
+          <div class="grid-container">
+            <img
+              src="./test-img/01.jpg"
+              class="grid-item"
+              alt="A painting of a flower"
+            />
+            <img
+              src="./test-img/02.jpg"
+              class="grid-item"
+              alt="A painting of a flower"
+            />
+            <img
+              src="./test-img/01.jpg"
+              class="grid-item"
+              alt="A painting of a flower"
+            />
+            <img
+              src="./test-img/02.jpg"
+              class="grid-item"
+              alt="A painting of a flower"
+            />
+            <img
+              src="./test-img/01.jpg"
+              class="grid-item"
+              alt="A painting of a flower"
+            />
+            <img
+              src="./test-img/02.jpg"
+              class="grid-item"
+              alt="A painting of a flower"
+            />
           </div>
         </div>
-        <div class="grid-container">
-          <img src="./test-img/01.jpg" class="grid-item" alt="A painting of a flower">
-          <img src="./test-img/02.jpg" class="grid-item" alt="A painting of a flower">
-          <img src="./test-img/01.jpg" class="grid-item" alt="A painting of a flower">
-          <img src="./test-img/02.jpg" class="grid-item" alt="A painting of a flower">
-         
-        </div>
-      </div>
-      <div class="footer section-header">
+      </section>
+
+      <section class="footer">
         <span><a href="https://instagram.com">instagram</a></span>
         <span><a href="https://github.com">Github</a></span>
         <span><a href="https://are.na">are.na</a></span>
         <span><a href="https://shadertoy.com">shadertoy</a></span>
         <span><a href="mailto:arthurcloche@gmail.com">mail</a></span>
         <span></span>
-        <span>All right reserved. 2023</span>
-      </div>
+        <span>All right reserved unless mentionned. 2023</span>
+      </section>
     </div>
   </body>
 </html>
