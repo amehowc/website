@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ctx.save();
     ctx.translate(width / 2, height / 2);
     ctx.save();
+    ctx.fillStyle ='transparent';
     ctx.beginPath();
     ctx.arc(0, 0, updatedRadius, updatedRadius, 2 * Math.PI, true);
     ctx.fill();
