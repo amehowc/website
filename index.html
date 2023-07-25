@@ -15,25 +15,23 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
-    <script src="sketch.js"></script>
+    <script src="./app.js" type="module"></script>
+
     <title>Hi !</title>
   </head>
   <body>
     <div class="main-container">
       <div class="spinner-container">
-        <canvas class="spinner-canvas" id="spinner-canvas" href="">Available for freelancing</canvas>
+        <canvas class="spinner-canvas" id="spinner-canvas" href=""
+          >Available for freelancing</canvas
+        >
       </div>
       <section class="intro">
         <div class="section-container">
           <h1 class="section-title" id="intro-title">hello !</h1>
           <div class="canvas-container">
-            <canvas
-              class="canvas"
-              id="canvas"
-            ></canvas>
+            <canvas class="canvas-intro" id="canvas-intro"></canvas>
           </div>
           <div class="section-text">
             <p>
@@ -52,7 +50,8 @@
           </div>
           <div class="section-subtext">
             <p>
-              Feel free to say hi <a href="mailto:arthurcloche@gmail.com">👋</a> !
+              Feel free to say hi
+              <a href="mailto:arthurcloche@gmail.com">👋</a> !
             </p>
           </div>
         </div>
@@ -68,58 +67,114 @@
 
         <div class="work-list">
           <div class="work-item-holder">
-            <button type="button" class="work-item">
-              Mutek Video Sources
-              <span>2021</span>
-            </button>
-            <div class="work-item-content">
-              <div class="work-item-infos">
-                <p class="work-item-name">Work Title</p>
-                <p class="work-item-date">2023</p>
-                <p class="work-item-collaborator">
-                  Client : <a href="https://www.caserne.com">Studio Baillat</a>
-                </p>
-              </div>
-              <div class="work-item-image">
-                <img src="./test-img/01.jpg" alt="A painting of a flower" />
-                <img src="./test-img/02.jpg" alt="A painting of a flower" />
-              </div>
-            </div>
-            <button type="button" class="work-item">
-              Turfu
-              <span>2021</span>
-            </button>
-            <div class="work-item-content">
-              <div class="work-item-infos">
-                <p class="work-item-name">Work Title</p>
-                <p class="work-item-date">2023</p>
-                <p class="work-item-collaborator">
-                  Client : <a href="https://www.caserne.com">Caserne</a>
-                </p>
-              </div>
-              <div class="work-item-image">
-                <img src="./test-img/01.jpg" alt="A painting of a flower" />
-                <img src="./test-img/02.jpg" alt="A painting of a flower" />
-              </div>
-            </div>
-            <button type="button" class="work-item">
-              Camelia Sinensis
-              <span>2021</span>
-            </button>
-            <div class="work-item-content">
-              <div class="work-item-infos">
-                <p class="work-item-name">Work Title</p>
-                <p class="work-item-date">2023</p>
-                <p class="work-item-collaborator">
-                  Client : <a href="https://www.caserne.com">Caserne</a>
-                </p>
-              </div>
-              <div class="work-item-image">
-                <img src="./test-img/01.jpg" class="content-image" alt="A painting of a flower" />
-                <img src="./test-img/02.jpg" class="content-image" alt="A painting of a flower" />
+            <div class="work-item-holder-entry">
+              <button type="button" class="work-item">
+                <span class="work-item-container work-item-client"
+                  >Studio Baillat</span
+                >
+                <span class="work-item-line-one line"></span>
+                <span class="work-item-container work-item-info"
+                  >Video Sources</span
+                >
+                <span class="work-item-line-two line"></span>
+                <span class="work-item-container work-item-year">2020</span>
+              </button>
+              <div class="work-item-content">
+                <div class="work-item-infos">
+                  <p class="work-item-name">Work Title</p>
+                  <p class="work-item-date">2023</p>
+                  <p class="work-item-collaborator">
+                    Client :
+                    <a href="https://www.caserne.com">Studio Baillat</a>
+                  </p>
+                </div>
+                <div class="work-item-image">
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/rect_x0wopc.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/poster_kmkmik.png"
+                    alt="A painting of a flower"
+                  />
+                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/square_qi1ntr.png" alt="A painting of a flower" />
+                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/vertical_oqw7kl.png" alt="A painting of a flower" />
+                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/horizontal_ciq9ry.png" alt="A painting of a flower" />
+                </div>
               </div>
             </div>
-          </div>
+            <div class="work-item-holder-entry">
+              <button type="button" class="work-item">
+                <span class="work-item-container work-item-client"
+                  >Studio Baillat</span
+                >
+                <span class="work-item-line-one line"></span>
+                <span class="work-item-container work-item-info"
+                  >Video Sources</span
+                >
+                <span class="work-item-line-two line"></span>
+                <span class="work-item-container work-item-year">2020</span>
+              </button>
+              <div class="work-item-content">
+                <div class="work-item-infos">
+                  <p class="work-item-name">Work Title</p>
+                  <p class="work-item-date">2023</p>
+                  <p class="work-item-collaborator">
+                    Client :
+                    <a href="https://www.caserne.com">Studio Baillat</a>
+                  </p>
+                </div>
+                <div class="work-item-image">
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/rect_x0wopc.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/poster_kmkmik.png"
+                    alt="A painting of a flower"
+                  />
+                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/square_qi1ntr.png" alt="A painting of a flower" />
+                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/vertical_oqw7kl.png" alt="A painting of a flower" />
+                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/horizontal_ciq9ry.png" alt="A painting of a flower" />
+                </div>
+              </div>
+            </div>
+            <div class="work-item-holder-entry">
+              <button type="button" class="work-item">
+                <span class="work-item-container work-item-client"
+                  >Studio Baillat</span
+                >
+                <span class="work-item-line-one line"></span>
+                <span class="work-item-container work-item-info"
+                  >Video Sources</span
+                >
+                <span class="work-item-line-two line"></span>
+                <span class="work-item-container work-item-year">2020</span>
+              </button>
+              <div class="work-item-content">
+                <div class="work-item-infos">
+                  <p class="work-item-name">Work Title</p>
+                  <p class="work-item-date">2023</p>
+                  <p class="work-item-collaborator">
+                    Client :
+                    <a href="https://www.caserne.com">Studio Baillat</a>
+                  </p>
+                </div>
+                <div class="work-item-image">
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/rect_x0wopc.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/poster_kmkmik.png"
+                    alt="A painting of a flower"
+                  />
+                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/square_qi1ntr.png" alt="A painting of a flower" />
+                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/vertical_oqw7kl.png" alt="A painting of a flower" />
+                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/horizontal_ciq9ry.png" alt="A painting of a flower" />
+                </div>
+              </div>
+            </div>
         </div>
       </section>
       <section class="creative-coding">
