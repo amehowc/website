@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const ctx = canvas.getContext("2d");
   const width = canvas.width;
   const height = canvas.height;
-  console.log(width, height);
   let radiusIncrease = 0;
   const radius = Math.min(height * 0.3, width * 0.5);
   const text = canvas.innerHTML;
