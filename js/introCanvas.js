@@ -22,6 +22,7 @@ export const introCanvas = () => {
     p5.setup = () => {
       const size = window.innerWidth < 767 ? 360 : 480;
       p5.createCanvas(size, (size * 16) / 9, p5.P2D, canvasIntro);
+      p5.pixelDensity(1)
     };
 
     p5.draw = () => {
