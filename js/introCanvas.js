@@ -39,7 +39,7 @@ export const introCanvas = () => {
     };
 
     p5.windowResized = () => {
-      const size = window.innerWidth < 767 ? 360 : 480;
+      const size = window.innerWidth < 767 ? 300 : 480;
       p5.resizeCanvas(size, (size * 16) / 9);
     };
   };
