@@ -47,35 +47,16 @@ export const spinnerCanvas = () => {
     ctxSpinner.restore();
   };
   const update = () => {
-    time = (time + 1)%numframes;
+    time = (time + 1) % numframes;
     drawSpinner();
     window.requestAnimationFrame(update);
   };
   update();
 
-  function updateRadius() {
-    const percent = Math.pow(variable, 2);
-    radiusIncrease = percent;
-  }
-
-  canvasSpinner.addEventListener("mouseover", () => {
-    smoothTransition(0, 1, 500, (value) => {
-      variable = value;
-      updateRadius();
-    });
-  });
-
-  canvasSpinner.addEventListener("mouseout", () => {
-    smoothTransition(1, 0, 500, (value) => {
-      variable = value;
-      updateRadius();
-    });
-  });
-
   function smoothTransition(start, end, duration, callback) {
     const startTime = new Date().getTime();
 
-    function update() {
+    function transitopmUpdate() {
       const currentTime = new Date().getTime();
       const elapsed = currentTime - startTime;
 
@@ -86,12 +67,30 @@ export const spinnerCanvas = () => {
         const easedProgress = quadraticEaseInOut(progress);
         const value = start + (end - start) * easedProgress;
         callback(value);
-        requestAnimationFrame(update);
+        requestAnimationFrame(transitopmUpdate);
       }
     }
 
-    update();
+    transitopmUpdate();
   }
+
+  function updateRadius(value) {
+    const percent = Math.pow(value, 2);
+    radiusIncrease = percent;
+  }
+
+  canvasSpinner.addEventListener("mouseover", () => {
+    smoothTransition(0, 1, 500, (value) => {
+      updateRadius(value);
+    });
+  });
+
+  canvasSpinner.addEventListener("mouseout", () => {
+    smoothTransition(1, 0, 500, (value) => {
+      updateRadius(value);
+    });
+  });
+
   function quadraticEaseInOut(t) {
     if (t < 0.5) {
       return 2 * t * t;

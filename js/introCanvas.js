@@ -16,9 +16,7 @@ const colors = [
   const canvasIntro = document.getElementById('canvas-intro');
   const ctxIntro = canvasIntro.getContext("2d");
   const pickedColors = colors[Math.floor(Math.random()*colors.length)];
-  console.log(window.innerWidth)
   const canvasWidth = window.innerWidth > 767 ? window.innerWidth * 0.2 : 360;
-  console.log(canvasWidth)
   const canvasHeight = canvasWidth * 16 / 9;
   canvasIntro.width = canvasWidth;
   canvasIntro.height = canvasHeight;
@@ -29,23 +27,19 @@ const colors = [
   function draw() {
     progress = (progress + 1) % totalFrames;
     actual = Math.floor(progress / frameForEach);
-    
     ctxIntro.clearRect(0, 0, canvasIntro.width, canvasIntro.height);
     ctxIntro.fillStyle = pickedColors[actual];
     ctxIntro.fillRect(0, 0, canvasIntro.width, canvasIntro.height);
-    
     requestAnimationFrame(draw);
   }
   draw()
 
   function windowResized() {
-    console.log('hey')
     const canvasWidth =  window.innerWidth > 767 ? window.innerWidth * 0.33 : 360;
     const canvasHeight = canvasWidth * 16 / 9;
     const canvasIntro = document.getElementById('canvas-intro');
     canvasIntro.width = canvasWidth;
     canvasIntro.height = canvasHeight;
-    console.log(canvasIntro.width)
   }
   
   window.addEventListener("resize", windowResized);
