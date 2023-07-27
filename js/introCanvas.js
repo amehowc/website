@@ -14,15 +14,13 @@ export const introCanvas = () => {
       ["#C5441F", "#F07032", "#40341F", "#8B8178", "#D9CAB8"],
       ["#0D703F", "#F1B73A", "#E6423A", "#5B4A3B", "#D3D8D2"],
     ];
-    let x = 100;
-    let y = 100;
     const pickedColors = colors[Math.floor(Math.random() * colors.length)];
     const frameForEach = 2 * 60;
     const totalFrames = pickedColors.length * frameForEach;
     p5.setup = () => {
       const size = window.innerWidth < 767 ? 360 : 480;
       p5.createCanvas(size, (size * 16) / 9, p5.P2D, canvasIntro);
-      p5.pixelDensity(1)
+      p5.pixelDensity(2)
     };
 
     p5.draw = () => {
