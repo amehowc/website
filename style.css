@@ -131,11 +131,6 @@ body {
   text-align: left; 
 }
 
-.work-item-info {
-  position: absolute;
-  margin-left: 50%;
-}
-
 .work-item-year {
   margin-left: auto;
   text-align: right;
@@ -255,10 +250,6 @@ a:visited {
   white-space: pre;
 }
 
-.hiddenOnMobile{
-  display: block;
-}
-
 /* For responsive layout */
 @media (max-width: 767px) {
   .main-container {
@@ -266,11 +257,6 @@ a:visited {
     display: block;
     width: 100%;
     font-size: medium;
-  }
-
-  .hiddenOnMobile{
-    background-color: aquamarine;
-    width : 0;
   }
 
   .grid-item {

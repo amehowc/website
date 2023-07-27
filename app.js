@@ -17,44 +17,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     workItem.addEventListener("mouseover", () => {
       const lineOne = workItem.querySelector(".work-item-line-one");
-      const lineTwo = workItem.querySelector(".work-item-line-two");
+      
       const firstWord = workItem.querySelector(".work-item-client");
       const secondWord = workItem.querySelector(".work-item-info");
-      const thirdWord = workItem.querySelector(".work-item-year");
+      
       const subContainer = workItem.querySelector(".work-item-container");
       const containerRect = workItem.getBoundingClientRect();
       const subContainerRect = subContainer.getBoundingClientRect();
       const firstWordRect = firstWord.getBoundingClientRect();
       const secondWordRect = secondWord.getBoundingClientRect();
-      const thirdWordRect = thirdWord.getBoundingClientRect();
+     
       const margins = 10;
       // Calculate lineOne's position
-      if(window.innerWidth>767) {
+      
       const lineOneStart = firstWordRect.right - subContainerRect.left + margins;
       const lineOneEnd = secondWordRect.left - containerRect.left - margins;
       lineOne.style.left = lineOneStart + "px";
       lineOne.style.width = lineOneEnd - lineOneStart + "px";
       lineOne.style.display = "block";
     
-      // Calculate lineTwo's position
-      const lineTwoStart = secondWordRect.right - containerRect.left + margins;
-      const lineTwoEnd = thirdWordRect.left - containerRect.left - margins;
-      lineTwo.style.left = lineTwoStart + "px";
-      lineTwo.style.width = lineTwoEnd - lineTwoStart + "px";
-      lineTwo.style.display = "block";
-    }
     });
-    const lineOne = workItem.querySelector(".work-item-line-one")
-      lineOne.style.display = "none"
-      const lineTwo = workItem.querySelector(".work-item-line-two")
-      lineTwo.style.display = "none"
+   
     workItem.addEventListener("mouseout", (event) => {
-      if(window.innerWidth>767) {
       const lineOne = workItem.querySelector(".work-item-line-one")
       lineOne.style.display = "none"
       const lineTwo = workItem.querySelector(".work-item-line-two")
       lineTwo.style.display = "none"
-    }
+    
     });
   }
 
