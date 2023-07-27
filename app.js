@@ -28,8 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const secondWordRect = secondWord.getBoundingClientRect();
      
       const margins = 10;
-      // Calculate lineOne's position
-      
       const lineOneStart = firstWordRect.right - subContainerRect.left + margins;
       const lineOneEnd = secondWordRect.left - containerRect.left - margins;
       lineOne.style.left = lineOneStart + "px";
