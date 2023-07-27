@@ -18,8 +18,15 @@ const colors = [
   const pickedColors = colors[Math.floor(Math.random()*colors.length)];
   const canvasWidth = window.innerWidth > 767 ? window.innerWidth * 0.2 : 360;
   const canvasHeight = canvasWidth * 16 / 9;
-  canvasIntro.width = canvasWidth;
-  canvasIntro.height = canvasHeight;
+
+  const scale = window.devicePixelRatio; // Change to 1 on retina screens to see blurry canvas.
+  canvasIntro.width = Math.floor(canvasWidth * scale);
+  canvasIntro.height = Math.floor(canvasHeight * scale);
+
+// Normalize coordinate system to use CSS pixels.
+ctxIntro.scale(scale, scale);
+
+  
   const frameForEach = 3 * 60
   const totalFrames = pickedColors.length * frameForEach;
   let progress = 0;
@@ -32,10 +39,11 @@ const colors = [
     ctxIntro.fillRect(0, 0, canvasIntro.width, canvasIntro.height);
     requestAnimationFrame(draw);
   }
+  windowResized()
   draw()
 
   function windowResized() {
-    const canvasWidth =  window.innerWidth > 767 ? window.innerWidth * 0.33 : 360;
+    const canvasWidth =  window.innerWidth > 767 ? window.innerWidth * 0.2 : 360;
     const canvasHeight = canvasWidth * 16 / 9;
     const canvasIntro = document.getElementById('canvas-intro');
     canvasIntro.width = canvasWidth;

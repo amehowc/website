@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const thirdWordRect = thirdWord.getBoundingClientRect();
       const margins = 10;
       // Calculate lineOne's position
+      if(window.innerWidth>767) {
       const lineOneStart = firstWordRect.right - subContainerRect.left + margins;
       const lineOneEnd = secondWordRect.left - containerRect.left - margins;
       lineOne.style.left = lineOneStart + "px";
@@ -41,13 +42,19 @@ document.addEventListener("DOMContentLoaded", function () {
       lineTwo.style.left = lineTwoStart + "px";
       lineTwo.style.width = lineTwoEnd - lineTwoStart + "px";
       lineTwo.style.display = "block";
+    }
     });
-
+    const lineOne = workItem.querySelector(".work-item-line-one")
+      lineOne.style.display = "none"
+      const lineTwo = workItem.querySelector(".work-item-line-two")
+      lineTwo.style.display = "none"
     workItem.addEventListener("mouseout", (event) => {
+      if(window.innerWidth>767) {
       const lineOne = workItem.querySelector(".work-item-line-one")
       lineOne.style.display = "none"
       const lineTwo = workItem.querySelector(".work-item-line-two")
       lineTwo.style.display = "none"
+    }
     });
   }
 

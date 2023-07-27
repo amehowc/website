@@ -255,6 +255,10 @@ a:visited {
   white-space: pre;
 }
 
+.hiddenOnMobile{
+  display: block;
+}
+
 /* For responsive layout */
 @media (max-width: 767px) {
   .main-container {
@@ -262,6 +266,11 @@ a:visited {
     display: block;
     width: 100%;
     font-size: medium;
+  }
+
+  .hiddenOnMobile{
+    background-color: aquamarine;
+    width : 0;
   }
 
   .grid-item {
@@ -276,6 +285,9 @@ a:visited {
     object-fit: cover;
   }
   
+  .section-text-noflex {
+    width: 80%;
+  }
 
   .work-item{
     font-size: 13px;
