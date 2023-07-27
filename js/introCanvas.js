@@ -18,7 +18,7 @@ export const introCanvas = () => {
     const frameForEach = 2 * 60;
     const totalFrames = pickedColors.length * frameForEach;
     p5.setup = () => {
-      const size = window.innerWidth < 767*p5.pixelDensity() ? 360 : 480;
+      const size = window.innerWidth < 767 ? 300 : 480;
       p5.createCanvas(size, Math.floor((size * 16) / 9), p5.P2D, canvasIntro);
       // p5.pixelDensity()/
       console.log(window.innerWidth)
