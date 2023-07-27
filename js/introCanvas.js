@@ -1,7 +1,6 @@
 export const introCanvas = () => {
-  
   const canvasIntro = document.getElementById("canvas-intro");
-  
+
   const sketchIntro = (p5) => {
     const colors = [
       ["#ED8008", "#ED3F1C", "#BF1B1B", "#736B1E", "#D9D2C6"],
@@ -20,22 +19,18 @@ export const introCanvas = () => {
     p5.setup = () => {
       const size = window.innerWidth < 767 ? 300 : 480;
       p5.createCanvas(size, Math.floor((size * 16) / 9), p5.P2D, canvasIntro);
-      // p5.pixelDensity()/
-      console.log(window.innerWidth)
-      p5.textAlign(p5.CENTER,p5.CENTER)
+      p5.textAlign(p5.CENTER, p5.CENTER);
     };
 
     p5.draw = () => {
       const progress = p5.frameCount % totalFrames;
       const actual = Math.floor(progress / frameForEach);
       p5.background(pickedColors[actual]);
-      p5.push()
-      p5.translate(p5.width/2,p5.height/2)
-      p5.textSize(120)
-      p5.text(window.innerWidth,0,0)
-      p5.pop()
-
-      
+      // p5.push();
+      // p5.translate(p5.width / 2, p5.height / 2);
+      // p5.textSize(120);
+      // p5.text(window.innerWidth, 0, 0);
+      // p5.pop();
     };
 
     p5.windowResized = () => {
@@ -45,4 +40,3 @@ export const introCanvas = () => {
   };
   const introP5 = new p5(sketchIntro);
 };
-
