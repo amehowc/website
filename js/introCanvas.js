@@ -17,7 +17,7 @@ export const introCanvas = () => {
   const canvasWidth = 360;
   const canvasHeight = (canvasWidth * 16) / 9;
 
-  const scale = window.devicePixelRatio; // Change to 1 on retina screens to see blurry canvas.
+  const scale = 1; // Change to 1 on retina screens to see blurry canvas.
   canvasIntro.width = Math.floor(canvasWidth * scale);
   canvasIntro.height = Math.floor(canvasHeight * scale);
 
