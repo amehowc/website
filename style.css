@@ -247,6 +247,9 @@ a:link {
   color: antiquewhite;
 }
 
+a:visited {
+  color: antiquewhite;
+}
 .footer > span::after {
   content: "\a";
   white-space: pre;
