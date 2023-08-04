@@ -17,7 +17,7 @@ export const introCanvas = () => {
     const frameForEach = 2 * 60;
     const totalFrames = pickedColors.length * frameForEach;
     p5.setup = () => {
-      const size = window.innerWidth < 767 ? 300 : 480;
+      const size = window.innerWidth < 767 ? 300 : window.innerHeight*.3;
       p5.createCanvas(size, Math.floor((size * 16) / 9), p5.P2D, canvasIntro);
       p5.textAlign(p5.CENTER, p5.CENTER);
     };
@@ -34,7 +34,7 @@ export const introCanvas = () => {
     };
 
     p5.windowResized = () => {
-      const size = window.innerWidth < 767 ? 300 : 480;
+      const size = window.innerWidth < 767 ? 300 : window.innerHeight*.3;
       p5.resizeCanvas(size, (size * 16) / 9);
     };
   };

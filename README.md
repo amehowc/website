@@ -2,7 +2,6 @@
 The repo for my little website. 
 
 
-TO DO : 
-- set up cloudinary repo
-- create jobs entry
-- check if DB should be better
+# Fonts in use
+Serif : 
+https://github.com/ertekinno/libre-caslon-condensed/
