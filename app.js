@@ -2,7 +2,7 @@ import { spinnerCanvas } from "./js/spinnerCanvas.js";
 import { introCanvas } from "./js/introCanvas.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-  const workItems = document.getElementsByClassName("work-item");
+  const workItems = document.getElementsByClassName("work-item-button");
   for (let i = 0; i < workItems.length; i++) {
     const workItem = workItems[i];
     var content = workItem.nextElementSibling;
