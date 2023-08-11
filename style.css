@@ -239,7 +239,7 @@ video[poster] {
   object-fit: cover;
 }
 
-.work-item-image > img {
+.work-item-medias > img {
   flex: 0;
   max-width: 100%;
   height: 50vh;
@@ -305,11 +305,19 @@ a:visited {
 
 /* For responsive layout */
 @media (max-width: 767px) {
-  .main-container {
-    margin: 5%;
-    display: block;
-    width: 100%;
-    font-size: medium;
+
+  .intro{
+    display: flex;
+    justify-content: center; /* This will center the child elements horizontally */
+    align-items: center;
+    height: auto;
+  }
+
+  .spinner-container {
+    top: 3vh;
+    width: auto;
+    height: auto;
+    pointer-events: none; 
   }
 
   #intro-title {
@@ -318,16 +326,19 @@ a:visited {
     line-height: 1.2;
   }
 
-  .grid-item {
-    width: calc(
-      50% - 5px
-    ); /* 50% to create 2 items per row on smaller screens */
+  .intro-container {
+    justify-content:flex-start;
   }
 
-  .grid-item > img {
+  .section-text {
+    width: 80%;
+  }
+
+  .main-container {
+    margin: 5%;
+    display: block;
     width: 100%;
-    height: 50vh;
-    object-fit: cover;
+    font-size: medium;
   }
 
   .section-text-noflex {
@@ -359,17 +370,14 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
-    height: 20vh;
+    height: 33vh;
     /* object-fit: cover; */
   }
   
   .work-item-video > video{
     flex: 0;
     max-width: 100%;
-    min-height: 50%;
-    
-    object-fit:contain;
+    object-fit:cover;
   }
 
   .work-item-image > img {
@@ -381,5 +389,17 @@ a:visited {
   .section-text {
     display: block;
     font-size: small;
+  }
+
+  .grid-item {
+    width: calc(
+      50% - 5px
+    ); /* 50% to create 2 items per row on smaller screens */
+  }
+
+  .grid-item > img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
   }
 }

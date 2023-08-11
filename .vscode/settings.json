@@ -1,5 +1,6 @@
 {
   "liveServer.settings.CustomHeaders": {
     "/js/*.js": { "Content-Type": "application/javascript" }
-  }
+  },
+  "liveServer.settings.port": 5501
 }

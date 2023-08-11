@@ -12,8 +12,8 @@ export const spinnerCanvas = () => {
     let radiusIncrease = 0;
     p5.setup = () => {
       p5.createCanvas(
-        canvasSpinner.width,
-        canvasSpinner.height,
+        radius*2.5,
+        radius*2.5,
         p5.P2D,
         canvasSpinner
       );
