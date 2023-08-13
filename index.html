@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta
+      name="description"
+      content="My little website to showcase what i like to do"
+    />
+    <meta name="author" content="Arthur Cloche" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,9 +19,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="intro.css" />
+    <link rel="stylesheet" href="works.css" />
+    <link rel="stylesheet" href="creative-coding.css" />
     <script src="./app.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
-
     <title>Hi !</title>
   </head>
   <body>
@@ -35,29 +40,28 @@
             <canvas class="canvas-intro" id="canvas-intro"></canvas>
           </div>
           <div class="section-text-container">
-          <div class="section-text">
-            <p class="section-text-paragraph">
-              I'm Arthur. I’m a designer and brand strategist by day and I
-              develop web-based design tools when I’m not sleeping, cooking or
-              playing with my cat. I’m always interested in collaborating with
-              cool people with larger than life ideas.
-            </p>
-            <p class="section-text-paragraph">
-              My weapons of choice are javaScript, webCanvas and webGL but I’m
-              always curious about learning new stuff and trying new
-              technologies. I’m trying to use this website to showcase what I
-              like to do. For my design portfolio, please reach out using any
-              means you like.
+            <div class="section-text">
+              <p class="section-text-paragraph">
+                I'm Arthur. I’m a designer and brand strategist by day and I
+                develop web-based design tools when I’m not sleeping, cooking or
+                playing with my cat. I’m always interested in collaborating with
+                cool people with larger than life ideas.
+              </p>
+              <p class="section-text-paragraph">
+                My weapons of choice are javaScript, webCanvas and webGL but I’m
+                always curious about learning new stuff and trying new
+                technologies. I’m trying to use this website to showcase what I
+                like to do. For my design portfolio, please reach out using any
+                means you like.
+              </p>
+            </div>
+          </div>
+          <div class="section-subtext">
+            <p>
+              Feel free to say hi
+              <a href="mailto:arthurcloche@gmail.com">👋</a> !
             </p>
           </div>
-          
-        </div>
-        <div class="section-subtext">
-          <p>
-            Feel free to say hi
-            <a href="mailto:arthurcloche@gmail.com">👋</a> !
-          </p>
-        </div>
         </div>
       </section>
       <section class="works">
@@ -73,78 +77,136 @@
             <!-- hologramme -->
             <div class="work-item-holder-entry">
               <button type="button" class="work-item-button">
-                <span class="work-item-container work-item-client">Hologramme</span>
+                <span class="work-item-container work-item-client"
+                  >Hologramme</span
+                >
                 <span class="work-item-line-one line"></span>
-                <span class="work-item-container work-item-info"> Video Sources</span>
+                <span class="work-item-container work-item-info">
+                  Video Sources</span
+                >
               </button>
               <div class="work-item-content">
                 <div class="work-item-infos">
                   <div class="work-item-text">
-                    <div class=" work-item-description">
-                      <p class="work-item-name">Developing a serie of type-based visuals to be used as video sources</p>
+                    <div class="work-item-description">
+                      <p class="work-item-name">
+                        Developing a serie of type-based visuals to be used as
+                        video sources
+                      </p>
                       <p class="work-item-name">2020</p>
                     </div>
                   </div>
                   <div class="work-item-text">
-                    <div class=" work-item-credits">
-                      <p class="work-item-date">Creative Direction :
+                    <div class="work-item-credits">
+                      <p class="work-item-date">
+                        Creative Direction :
                         <a href="https://www.baillat.com">Studio Baillat</a>
                       </p>
                       <p class="work-item-name">
                         Case study :
-                        <a href="https://baillatstudio.com/en/project/hologramme-preface">Hologramme Préface</a>
+                        <a
+                          href="https://baillatstudio.com/en/project/hologramme-preface"
+                          >Hologramme Préface</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
-                <div class="work-item-medias">
-                    <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation_xnziit.png" alt="A painting of a flower"/>
-                    <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation2_y1qtkc.png" alt="A painting of a flower">
-                    <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation3_beiwt9.png" alt="A painting of a flower" />
-                    <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765361/personal-website/works/constellation/constellation4_p0ivja.png" alt="A painting of a flower" />
-                    <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation5_itrydq.png" alt="A painting of a flower" />
-                    <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765361/personal-website/works/constellation/constellation7_l6xgkb.png" alt="A painting of a flower" />
-                    <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation8_av73oo.png" alt="A painting of a flower" />
-                    <img src="https://res.cloudinary.com/amehowc/image/upload/v1690492643/personal-website/works/baillat/baillat-video-capture_ppvf14.png">
-                  </div>
+                <div class="work-item-image">
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691803580/personal-website/works/baillat/hologramme_uh9utu.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691803579/personal-website/works/baillat/hologramme3_tpmmav.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691804145/personal-website/works/baillat/hologramme_lm3qs8.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691803578/personal-website/works/baillat/hologramme4_eyghpj.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691803578/personal-website/works/baillat/hologramme5_s2tvgq.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691803579/personal-website/works/baillat/hologramme6_zj7ev0.png"
+                    alt="A painting of a flower"
+                  />
                 </div>
               </div>
             </div>
             <!-- constellation -->
             <div class="work-item-holder-entry">
               <button type="button" class="work-item-button">
-                <span class="work-item-container work-item-client">Raphael de la Morinerie</span>
+                <span class="work-item-container work-item-client"
+                  >Raphael de la Morinerie</span
+                >
                 <span class="work-item-line-one line"></span>
-                <span class="work-item-container work-item-info">Type Specimen</span>
+                <span class="work-item-container work-item-info"
+                  >Type Specimen</span
+                >
               </button>
               <div class="work-item-content">
                 <div class="work-item-infos">
                   <div class="work-item-text">
-                    <div class=" work-item-description">
-                      <p class="work-item-name">Developing a serie of type-based visuals to be used as video sources</p>
+                    <div class="work-item-description">
+                      <p class="work-item-name">
+                        Developing a serie of type-based visuals to be used as
+                        video sources
+                      </p>
                       <p class="work-item-name">2020</p>
                     </div>
                   </div>
                   <div class="work-item-text">
-                    <div class=" work-item-credits">
-                      <p class="work-item-date">Creative Direction :
+                    <div class="work-item-credits">
+                      <p class="work-item-date">
+                        Creative Direction :
                         <a href="https://www.baillat.com">Studio Baillat</a>
                       </p>
                       <p class="work-item-name">
                         Case study :
-                        <a href="https://baillatstudio.com/en/project/hologramme-preface">Hologramme Préface</a>
+                        <a
+                          href="https://baillatstudio.com/en/project/hologramme-preface"
+                          >Hologramme Préface</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
-                <div class="work-item-medias">
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation_xnziit.png" alt="A painting of a flower"/>
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation2_y1qtkc.png" alt="A painting of a flower">
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation3_beiwt9.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765361/personal-website/works/constellation/constellation4_p0ivja.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation5_itrydq.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765361/personal-website/works/constellation/constellation7_l6xgkb.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation8_av73oo.png" alt="A painting of a flower" />
+                <div class="work-item-image">
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation_xnziit.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation2_y1qtkc.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation3_beiwt9.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765361/personal-website/works/constellation/constellation4_p0ivja.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation5_itrydq.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765361/personal-website/works/constellation/constellation7_l6xgkb.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation8_av73oo.png"
+                    alt="A painting of a flower"
+                  />
                 </div>
               </div>
             </div>
@@ -153,36 +215,78 @@
               <button type="button" class="work-item-button">
                 <span class="work-item-container work-item-client">Turfu</span>
                 <span class="work-item-line-one line"></span>
-                <span class="work-item-container work-item-info">Icon Generator</span>
+                <span class="work-item-container work-item-info"
+                  >Icon Generator</span
+                >
               </button>
               <div class="work-item-content">
                 <div class="work-item-infos">
                   <div class="work-item-text">
-                    <div class=" work-item-description">
-                      <p class="work-item-name">Developing a serie of type-based visuals to be used as video sources</p>
+                    <div class="work-item-description">
+                      <p class="work-item-name">
+                        Developing a serie of type-based visuals to be used as
+                        video sources
+                      </p>
                       <p class="work-item-name">2020</p>
                     </div>
                   </div>
                   <div class="work-item-text">
-                    <div class=" work-item-credits">
-                      <p class="work-item-date">Creative Direction :
+                    <div class="work-item-credits">
+                      <p class="work-item-date">
+                        Creative Direction :
                         <a href="https://www.baillat.com">Studio Baillat</a>
                       </p>
                       <p class="work-item-name">
                         Case study :
-                        <a href="https://baillatstudio.com/en/project/hologramme-preface">Hologramme Préface</a>
+                        <a
+                          href="https://baillatstudio.com/en/project/hologramme-preface"
+                          >Hologramme Préface</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="work-item-image">
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation_e2hqzz.png" alt="A painting of a flower"/>
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation2_ju9m8e.png" alt="A painting of a flower">
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation5_mar30t.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation7_acoevq.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation4_tw7q40.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499961/personal-website/works/constellation/constellation3_dbve4a.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499961/personal-website/works/constellation/constellation8_c5qzef.png" alt="A painting of a flower" />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691790571/personal-website/works/turfu/turfu_v0rcov.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691790570/personal-website/works/turfu/turfu2_s5udgf.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691790571/personal-website/works/turfu/turfu3_enfy0w.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691790570/personal-website/works/turfu/turfu4_tw36xr.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691790570/personal-website/works/turfu/turfu5_yf8jby.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691790571/personal-website/works/turfu/turfu6_qtjwjv.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691790570/personal-website/works/turfu/turfu7_f0d32b.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691790570/personal-website/works/turfu/turfu8_hucru6.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691790844/personal-website/works/turfu/turfu9_zkcqtn.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691805341/personal-website/works/turfu/turfu_rrrztv.png"
+                    alt="A painting of a flower"
+                  />
                 </div>
               </div>
             </div>
@@ -191,36 +295,58 @@
               <button type="button" class="work-item-button">
                 <span class="work-item-container work-item-client">Yaka</span>
                 <span class="work-item-line-one line"></span>
-                <span class="work-item-container work-item-info">Icon Generator</span>
+                <span class="work-item-container work-item-info"
+                  >Icon Generator</span
+                >
               </button>
               <div class="work-item-content">
                 <div class="work-item-infos">
                   <div class="work-item-text">
-                    <div class=" work-item-description">
-                      <p class="work-item-name">Developing a serie of type-based visuals to be used as video sources</p>
+                    <div class="work-item-description">
+                      <p class="work-item-name">
+                        Developing a serie of type-based visuals to be used as
+                        video sources
+                      </p>
                       <p class="work-item-name">2020</p>
                     </div>
                   </div>
                   <div class="work-item-text">
-                    <div class=" work-item-credits">
-                      <p class="work-item-date">Creative Direction :
+                    <div class="work-item-credits">
+                      <p class="work-item-date">
+                        Creative Direction :
                         <a href="https://www.baillat.com">Studio Baillat</a>
                       </p>
                       <p class="work-item-name">
                         Case study :
-                        <a href="https://baillatstudio.com/en/project/hologramme-preface">Hologramme Préface</a>
+                        <a
+                          href="https://baillatstudio.com/en/project/hologramme-preface"
+                          >Hologramme Préface</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
-                <div class="work-item-medias">
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation_e2hqzz.png" alt="A painting of a flower"/>
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation2_ju9m8e.png" alt="A painting of a flower">
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation5_mar30t.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation7_acoevq.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation4_tw7q40.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499961/personal-website/works/constellation/constellation3_dbve4a.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499961/personal-website/works/constellation/constellation8_c5qzef.png" alt="A painting of a flower" />
+                <div class="work-item-image">
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691855785/personal-website/works/yaka/yaka_d6jqmu.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691855784/personal-website/works/yaka/yaka2_lvu8p6.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691855785/personal-website/works/yaka/yaka3_vz94j6.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691855784/personal-website/works/yaka/yaka4_d4uiui.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691855785/personal-website/works/yaka/yaka5_ro5qrx.png"
+                    alt="A painting of a flower"
+                  />
                 </div>
               </div>
             </div>
@@ -229,112 +355,218 @@
               <button type="button" class="work-item-button">
                 <span class="work-item-container work-item-client">Parade</span>
                 <span class="work-item-line-one line"></span>
-                <span class="work-item-container work-item-info">Visual Exploration</span>
+                <span class="work-item-container work-item-info"
+                  >Visual Exploration</span
+                >
               </button>
               <div class="work-item-content">
                 <div class="work-item-infos">
                   <div class="work-item-text">
-                    <div class=" work-item-description">
-                      <p class="work-item-name">Developing a serie of type-based visuals to be used as video sources</p>
+                    <div class="work-item-description">
+                      <p class="work-item-name">
+                        Developing a serie of type-based visuals to be used as
+                        video sources
+                      </p>
                       <p class="work-item-name">2020</p>
                     </div>
                   </div>
                   <div class="work-item-text">
-                    <div class=" work-item-credits">
-                      <p class="work-item-date">Creative Direction :
+                    <div class="work-item-credits">
+                      <p class="work-item-date">
+                        Creative Direction :
                         <a href="https://www.baillat.com">Studio Baillat</a>
                       </p>
                       <p class="work-item-name">
                         Case study :
-                        <a href="https://baillatstudio.com/en/project/hologramme-preface">Hologramme Préface</a>
+                        <a
+                          href="https://baillatstudio.com/en/project/hologramme-preface"
+                          >Hologramme Préface</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="work-item-image">
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation_e2hqzz.png" alt="A painting of a flower"/>
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation2_ju9m8e.png" alt="A painting of a flower">
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation5_mar30t.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation7_acoevq.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation4_tw7q40.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499961/personal-website/works/constellation/constellation3_dbve4a.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499961/personal-website/works/constellation/constellation8_c5qzef.png" alt="A painting of a flower" />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation_xnziit.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation2_y1qtkc.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation3_beiwt9.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765361/personal-website/works/constellation/constellation4_p0ivja.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation5_itrydq.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765361/personal-website/works/constellation/constellation7_l6xgkb.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation8_av73oo.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1690492643/personal-website/works/baillat/baillat-video-capture_ppvf14.png"
+                    alt="A painting of a flower"
+                  />
                 </div>
               </div>
             </div>
             <!-- Supergrand -->
             <div class="work-item-holder-entry">
               <button type="button" class="work-item-button">
-                <span class="work-item-container work-item-client">Supergrand</span>
+                <span class="work-item-container work-item-client"
+                  >Supergrand</span
+                >
                 <span class="work-item-line-one line"></span>
-                <span class="work-item-container work-item-info">Anmimated Content</span>
+                <span class="work-item-container work-item-info"
+                  >Anmimated Content</span
+                >
               </button>
               <div class="work-item-content">
                 <div class="work-item-infos">
                   <div class="work-item-text">
-                    <div class=" work-item-description">
-                      <p class="work-item-name">Developing a serie of type-based visuals to be used as video sources</p>
+                    <div class="work-item-description">
+                      <p class="work-item-name">
+                        Developing a serie of type-based visuals to be used as
+                        video sources
+                      </p>
                       <p class="work-item-name">2020</p>
                     </div>
                   </div>
                   <div class="work-item-text">
-                    <div class=" work-item-credits">
-                      <p class="work-item-date">Creative Direction :
+                    <div class="work-item-credits">
+                      <p class="work-item-date">
+                        Creative Direction :
                         <a href="https://www.baillat.com">Studio Baillat</a>
                       </p>
                       <p class="work-item-name">
                         Case study :
-                        <a href="https://baillatstudio.com/en/project/hologramme-preface">Hologramme Préface</a>
+                        <a
+                          href="https://baillatstudio.com/en/project/hologramme-preface"
+                          >Hologramme Préface</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="work-item-image">
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation_e2hqzz.png" alt="A painting of a flower"/>
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation2_ju9m8e.png" alt="A painting of a flower">
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation5_mar30t.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation7_acoevq.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation4_tw7q40.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499961/personal-website/works/constellation/constellation3_dbve4a.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499961/personal-website/works/constellation/constellation8_c5qzef.png" alt="A painting of a flower" />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation_xnziit.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation2_y1qtkc.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation3_beiwt9.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765361/personal-website/works/constellation/constellation4_p0ivja.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation5_itrydq.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765361/personal-website/works/constellation/constellation7_l6xgkb.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation8_av73oo.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1690492643/personal-website/works/baillat/baillat-video-capture_ppvf14.png"
+                    alt="A painting of a flower"
+                  />
                 </div>
               </div>
             </div>
             <!-- Cloudchamber -->
             <div class="work-item-holder-entry">
               <button type="button" class="work-item-button">
-                <span class="work-item-container work-item-client">Cloudchamber</span>
+                <span class="work-item-container work-item-client"
+                  >Cloudchamber</span
+                >
                 <span class="work-item-line-one line"></span>
-                <span class="work-item-container work-item-info">AR Experience</span>
+                <span class="work-item-container work-item-info"
+                  >AR Experience</span
+                >
               </button>
               <div class="work-item-content">
                 <div class="work-item-infos">
                   <div class="work-item-text">
-                    <div class=" work-item-description">
-                      <p class="work-item-name">Developing a serie of type-based visuals to be used as video sources</p>
+                    <div class="work-item-description">
+                      <p class="work-item-name">
+                        Developing a serie of type-based visuals to be used as
+                        video sources
+                      </p>
                       <p class="work-item-name">2020</p>
                     </div>
                   </div>
                   <div class="work-item-text">
-                    <div class=" work-item-credits">
-                      <p class="work-item-date">Creative Direction :
+                    <div class="work-item-credits">
+                      <p class="work-item-date">
+                        Creative Direction :
                         <a href="https://www.baillat.com">Studio Baillat</a>
                       </p>
                       <p class="work-item-name">
                         Case study :
-                        <a href="https://baillatstudio.com/en/project/hologramme-preface">Hologramme Préface</a>
+                        <a
+                          href="https://baillatstudio.com/en/project/hologramme-preface"
+                          >Hologramme Préface</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="work-item-image">
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation_e2hqzz.png" alt="A painting of a flower"/>
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation2_ju9m8e.png" alt="A painting of a flower">
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation5_mar30t.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation7_acoevq.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499962/personal-website/works/constellation/constellation4_tw7q40.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499961/personal-website/works/constellation/constellation3_dbve4a.png" alt="A painting of a flower" />
-                  <img src="https://res.cloudinary.com/amehowc/image/upload/v1690499961/personal-website/works/constellation/constellation8_c5qzef.png" alt="A painting of a flower" />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation_xnziit.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation2_y1qtkc.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation3_beiwt9.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765361/personal-website/works/constellation/constellation4_p0ivja.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation5_itrydq.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765361/personal-website/works/constellation/constellation7_l6xgkb.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1691765360/personal-website/works/constellation/constellation8_av73oo.png"
+                    alt="A painting of a flower"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/amehowc/image/upload/v1690492643/personal-website/works/baillat/baillat-video-capture_ppvf14.png"
+                    alt="A painting of a flower"
+                  />
                 </div>
               </div>
             </div>
@@ -351,36 +583,66 @@
         </div>
         <div class="grid-section">
           <div class="grid-container">
-            <img
-              src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/placeholders/vertical_oqw7kl.png"
-              class="grid-item"
-              alt="A painting of a flower"
-            />
-            <img
-              src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/placeholders/vertical_oqw7kl.png"
-              class="grid-item"
-              alt="A painting of a flower"
-            />
-            <img
-              src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/placeholders/vertical_oqw7kl.png"
-              class="grid-item"
-              alt="A painting of a flower"
-            />
-            <img
-              src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/placeholders/vertical_oqw7kl.png"
-              class="grid-item"
-              alt="A painting of a flower"
-            />
-            <img
-              src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/placeholders/vertical_oqw7kl.png"
-              class="grid-item"
-              alt="A painting of a flower"
-            />
-            <img
-              src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/placeholders/vertical_oqw7kl.png"
-              class="grid-item"
-              alt="A painting of a flower"
-            />
+            <div class="grid-item">
+              <div class="grid-item-text">
+                <h1>Hello World</h1>
+                <p>2d shape</p>
+              </div>
+              <div class="grid-item-image">
+                <img src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/placeholders/vertical_oqw7kl.png" alt="" />
+              </div>
+              <div class="grid-item-buttons">
+                <button onclick="(()=>{console.log('hey')})()">
+                  I'm a button
+                </button>
+                <button onclick="(()=>{console.log('hey')})()">
+                  I'm a button
+                </button>
+                <button onclick="(()=>{console.log('hey')})()">
+                  I'm a button
+                </button>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="grid-item-text">
+                <h1>Hello World</h1>
+                <p>2d shape</p>
+              </div>
+              <div class="grid-item-image">
+                <img src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/placeholders/vertical_oqw7kl.png" alt="" />
+              </div>
+              <div class="grid-item-buttons">
+                <button onclick="(()=>{console.log('hey')})()">
+                  I'm a button
+                </button>
+                <button onclick="(()=>{console.log('hey')})()">
+                  I'm a button
+                </button>
+                <button onclick="(()=>{console.log('hey')})()">
+                  I'm a button
+                </button>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="grid-item-text">
+                <h1>Hello World</h1>
+                <p>2d shape</p>
+              </div>
+              <div class="grid-item-image">
+                <img src="https://res.cloudinary.com/amehowc/image/upload/v1635900459/personal-website/placeholders/vertical_oqw7kl.png" alt="" />
+              </div>
+              <div class="grid-item-buttons">
+                <button onclick="(()=>{console.log('hey')})()">
+                  I'm a button
+                </button>
+                <button onclick="(()=>{console.log('hey')})()">
+                  I'm a button
+                </button>
+                <button onclick="(()=>{console.log('hey')})()">
+                  I'm a button
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>

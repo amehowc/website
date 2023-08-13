@@ -1,0 +1,46 @@
+.intro {
+  display: flex;
+  justify-content: center; /* This will center the child elements horizontally */
+  align-items: center;
+  height: 100vh;
+}
+
+.intro-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#intro-title {
+  box-sizing: content-box;
+  font-size: clamp(10rem, 12rem, 18rem);
+  line-height: 1.2;
+}
+
+.canvas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  #intro-title {
+    box-sizing: content-box;
+    font-size: clamp(5rem, 8rem, 10rem);
+    line-height: 1.2;
+  }
+
+  .intro-container {
+    justify-content: flex-start;
+  }
+}
