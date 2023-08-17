@@ -20,7 +20,7 @@
   }
   
   .grid-item {
-    width:calc(19.5% - 5px);
+    width:calc(19.75% - 5px);
     aspect-ratio: 9 / 16;
     height:auto;
     position: relative; /* Added */
@@ -69,15 +69,13 @@
       justify-content: center;  /* Centers the buttons */
       align-items: center;  
       bottom: 5%;
-      /* gap: 10px; */
-
-      flex-wrap: nowrap;  /* Ensures items don't wrap */
+      flex-wrap: nowrap;
   }
   
   
   .grid-item-buttons > button {
       flex: 1; 
-      max-width: 25%; 
+      min-width: 25%; 
       width: 100%; 
       text-align: center;  
       box-sizing: border-box;
@@ -121,8 +119,7 @@
       background-color:beige;
    }
 
-   @media (max-width: 1200px) {
-
+   @media (max-width: 1500px) {
     .grid-item {
       width:calc(32.5% - 5px);;
     }
@@ -130,6 +127,28 @@
 
 
   @media (max-width: 767px) {
+
+    .grid-item-text p {
+      font-size: 12px;
+      padding-top: 4px;
+      color:black;
+  
+    }
+    
+    .grid-item-text h2 {
+      padding-top: 10px;
+      color:black;
+      font-family: Libre Caslon;
+      font-size:20px;
+      line-height: 20px;
+    }
+    .grid-item-buttons {
+
+      bottom: 0%;
+  }
+    .grid-item-buttons > button {
+      font-size:12px;
+  }
 
     .grid-item {
       width: calc(50% - 5px);

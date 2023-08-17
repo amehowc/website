@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Libre Caslon";
   src: url("src/LibreCaslonCondensed-Regular.woff2") format("woff");
+  font-weight: 300;
 }
 
 .blue {
@@ -36,7 +37,6 @@ body {
   position: relative;
   display: block;
   width: 80%;
-  
 }
 
 .spinner-container {
@@ -95,11 +95,17 @@ body {
   font-size: large;
 }
 
+.text-paragraph-noflex{
+  /* background-color: #f398c3; */
+  width:100%;
+  font-size: large;
+}
+
 .footer {
   margin-top: 5%;
   border-top: solid antiquewhite 1px;
   padding-top: 2%;
-  font-size: small;
+  font-size: medium;
   font-weight: 300;
   padding-bottom: 40px;
 }
@@ -133,18 +139,19 @@ a:visited {
 
   .text-paragraph-flex{
     /* background-color: #f398c3; */
-    width:40%;
+    width:47%;
     font-size: small;
   }
 
   .main-container {
-    margin: 5%;
+    margin: 0%;
     display: block;
     width: 100%;
     font-size: medium;
   }
 
   .section-text-noflex {
-    width: 80%;
+    width: 90%;
+    font-size: small;
   }
 }

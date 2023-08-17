@@ -115,6 +115,11 @@
 }
 
 @media (max-width: 767px) {
+
+  .works{
+    width: 100%;
+  }
+
   .work-item {
     font-size: 13px;
   }
@@ -133,7 +138,7 @@
   }
 
   .work-list {
-    width: calc(100%-20px);
+    width: calc(100% - 8px);
   }
 
   .work-item-video {
