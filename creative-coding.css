@@ -8,26 +8,23 @@
     padding-top: 7%;
     padding-bottom: 7%;
   }
-  
+
+
   .grid-container {
-    padding-top: 5%;
+    width:100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 10px;
+    gap:10px;
+    margin-top: 80px;
   }
   
   .grid-item {
-    /* width: calc(
-      20% - 10px
-    ); */
+    width:calc(24% - 5px);
     position: relative; /* Added */
-    background-color: #f0f;
-    width: 360px;
-    height: 640px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     overflow: hidden;
   }
@@ -44,17 +41,17 @@
   .grid-item-text {
     height: 100%;
     text-align: center;
-    background-color: yellow;
     color:black;
     top: -100%; /* Initially out of view */
   }
   
   .grid-item-buttons {
       display: flex;
+      padding-left: 10px;
+      padding-right: 10px;
       justify-content: center;  /* Centers the buttons */
       align-items: center;  
       bottom: -100%;
-      background-color: magenta;
       gap: 10px;
       flex-wrap: nowrap;  /* Ensures items don't wrap */
   }
@@ -62,7 +59,7 @@
   
   .grid-item-buttons > button {
       flex: 1;  /* Makes buttons take up all available space */
-      max-width: 33%;  /* Ensures no button takes more than 33% width */
+      max-width: 25%;  /* Ensures no button takes more than 33% width */
       width: 100%;  /* By default, make them try to fill up their container */
       text-align: center;  /* Centers the text within the buttons */
       box-sizing: border-box;  /* Makes sure padding and border don't increase button's total width */
@@ -102,8 +99,6 @@
   @media (max-width: 767px) {
 
     .grid-item {
-      width: calc(
-        50% - 5px
-      ); /* 50% to create 2 items per row on smaller screens */
+      width: calc(50% - 5px);
     }
   }

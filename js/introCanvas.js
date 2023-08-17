@@ -17,26 +17,30 @@ export const introCanvas = () => {
     const frameForEach = 2 * 60;
     const totalFrames = pickedColors.length * frameForEach;
     p5.setup = () => {
-      const size = window.innerWidth < 767 ? 300 : window.innerHeight*.3;
-      p5.createCanvas(size, Math.floor((size * 16) / 9), p5.P2D, canvasIntro);
-      p5.textAlign(p5.CENTER, p5.CENTER);
+      const size = window.innerWidth < 767 ? 240 : window.innerHeight*.3;
+      const canvas = p5.createCanvas(size, Math.floor((size * 16) / 9), p5.WEBGL);
+      canvas.parent(document.getElementById('intro-canvas'))
+      // p5.textAlign(p5.CENTER, p5.CENTER);
+      p5.noStroke()
     };
 
     p5.draw = () => {
-      const progress = p5.frameCount % totalFrames;
-      const actual = Math.floor(progress / frameForEach);
-      p5.background(pickedColors[actual]);
-      // p5.push();
-      // p5.translate(p5.width / 2, p5.height / 2);
-      // p5.textSize(120);
-      // p5.text(window.innerWidth, 0, 0);
-      // p5.pop();
+      p5.clear()
+      const progress = (p5.frameCount/totalFrames)%1 ;
+      const actual = Math.floor(p5.frameCount % totalFrames / frameForEach);
+      p5.lights()
+      p5.push()
+      p5.translate(0,0,-p5.width*.5)
+      p5.rotateY(progress*p5.PI*pickedColors.length+p5.PI/2)
+      p5.fill(pickedColors[actual])
+      p5.plane(p5.width,p5.height)
+      p5.pop()
     };
 
     p5.windowResized = () => {
-      const size = window.innerWidth < 767 ? 300 : window.innerHeight*.3;
+      const size = window.innerWidth < 767 ? 240 : window.innerHeight*.3;
       p5.resizeCanvas(size, (size * 16) / 9);
     };
   };
-  const introP5 = new p5(sketchIntro);
+   const introP5 = new p5(sketchIntro);
 };
