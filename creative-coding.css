@@ -20,7 +20,7 @@
   }
   
   .grid-item {
-    width:calc(24% - 5px);
+    width:calc(19.5% - 5px);
     position: relative; /* Added */
     display: flex;
     align-items: center;
@@ -34,67 +34,88 @@
   .grid-item-buttons {
     position: absolute; /* Absolute positioning */
     width: 100%;
-    transition: 0.3s ease; /* Smooth transition */
-    /* Fixed typo in color declaration */
+    transition: 0.2s ease; /* Smooth transition */
   }
   
   .grid-item-text {
+    width: 100%;
     height: 100%;
     text-align: center;
     color:black;
-    top: -100%; /* Initially out of view */
+    /* top: -100%;  */
   }
   
+  .grid-item-text h2 {
+    padding-top: 20px;
+    color:black;
+    font-family: Libre Caslon;
+    font-size:40px;
+    line-height: 36px;
+  }
+
+  .grid-item-text p {
+    font-size: 20px;
+    padding-top: 12px;
+    color:black;
+
+  }
+
   .grid-item-buttons {
       display: flex;
       padding-left: 10px;
       padding-right: 10px;
       justify-content: center;  /* Centers the buttons */
       align-items: center;  
-      bottom: -100%;
-      gap: 10px;
+      bottom: 5%;
+      /* gap: 10px; */
+
       flex-wrap: nowrap;  /* Ensures items don't wrap */
   }
   
   
   .grid-item-buttons > button {
-      flex: 1;  /* Makes buttons take up all available space */
-      max-width: 25%;  /* Ensures no button takes more than 33% width */
-      width: 100%;  /* By default, make them try to fill up their container */
-      text-align: center;  /* Centers the text within the buttons */
-      box-sizing: border-box;  /* Makes sure padding and border don't increase button's total width */
+      flex: 1; 
+      max-width: 25%; 
+      width: 100%; 
+      text-align: center;  
+      box-sizing: border-box;
+      background-color:transparent;
+      border: 1px solid black;
+      outline: none;
+      padding:6px;
+      margin:2px;
+      transition: background-color 0.2s; 
   }
   
   
   .grid-item-image {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position:relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s ease;
+  top:0%;
     /*     transition: border-radius 0.2s ease-in-out, width 0.3s ease, height 0.3s ease; */
   }
-  
-  /* .holder:hover .container {
-      width: 360px;
-      height: 360px;
-      border-radius: 180px;
-  } */
-  
+    
   .grid-item-image > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   
-  .grid-item:hover .grid-item-text {
-    top: 0%; /* Adjust based on your needs */
+  .grid-item:hover .grid-item-image {
+    width:50%;
+    height:50%;
+    top:25%;
   }
-  
-  .grid-item:hover .grid-item-buttons {
-    bottom: 5%; /* Adjust based on your needs */
-  }
+
+   .grid-item-buttons > button:hover{
+      background-color:beige;
+   }
 
   @media (max-width: 767px) {
 
