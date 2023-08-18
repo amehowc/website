@@ -150,6 +150,10 @@
       font-size:12px;
   }
 
+  .grid-item-buttons > a{
+    font-size: 12px;
+  }
+
     .grid-item {
       width: calc(50% - 5px);
     }
