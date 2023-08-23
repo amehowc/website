@@ -136,6 +136,10 @@
   
     }
     
+    .hiddenOnMobile{
+      display: none;
+    }
+
     .grid-item-text h2 {
       padding-top: 10px;
       color:black;
